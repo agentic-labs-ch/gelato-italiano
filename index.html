@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gelato Italiano — drei Entwürfe</title>
+<style>
+  :root{
+    color-scheme: light;
+    --ink:#1b1b1f; --muted:#55555e; --bg:#fbfbfa; --card:#ffffff;
+    --line:#e2e2e6; --accent:#1f4f8f;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:1rem/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    hyphens:auto;
+  }
+  img{max-width:100%; height:auto; display:block}
+  a{color:var(--accent)}
+  :focus-visible{outline:3px solid var(--accent); outline-offset:3px}
+
+  .wrap{max-width:60rem; margin:0 auto; padding:0 1.25rem}
+  header{padding:3rem 0 1.5rem}
+  h1{font-size:clamp(1.75rem,6vw,2.5rem); line-height:1.15; margin:0 0 .5rem}
+  .lede{color:var(--muted); font-size:1.125rem; margin:0; max-width:42rem}
+
+  .grid{display:grid; gap:1.5rem; padding-bottom:3rem}
+  @media (min-width:52rem){ .grid{grid-template-columns:repeat(3,1fr)} }
+
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:.9rem;
+    overflow:hidden; display:flex; flex-direction:column;
+  }
+  .card img{border-bottom:1px solid var(--line); width:100%}
+  .card .text{padding:1.25rem; display:flex; flex-direction:column; gap:.5rem; flex:1}
+  .card h2{font-size:1.25rem; margin:0}
+  .card p{margin:0; color:var(--muted)}
+  .open{
+    margin-top:auto; align-self:flex-start;
+    display:inline-flex; align-items:center; min-height:48px; padding:0 1.5rem;
+    border-radius:.5rem; background:var(--accent); color:#fff;
+    font-weight:600; text-decoration:none;
+  }
+
+  footer{border-top:1px solid var(--line); padding:2rem 0 3rem; color:var(--muted)}
+  footer p{margin:0 0 .5rem; max-width:42rem}
+
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation-duration:.001ms !important; transition-duration:.001ms !important}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <h1>Gelato Italiano — drei Entwürfe</h1>
+    <p class="lede">Gleiche Inhalte, gleiche Fotos, gleicher Aufbau. Nur die Gestaltung
+    unterscheidet sich, damit sich die Entwürfe an dem vergleichen lassen, was
+    tatsächlich variiert. Am besten auf dem Telefon ansehen.</p>
+  </header>
+
+  <div class="grid">
+
+    <article class="card">
+      <img src="preview-gold.jpg" width="1082" height="1838" alt="Vorschau des Entwurfs Gold auf einem Telefon">
+      <div class="text">
+        <h2>Gold</h2>
+        <p>Warm und hell. Ein Akzent trägt die ganze Seite, Karten und viel Weissraum
+        halten die Fotos zusammen.</p>
+        <a class="open" href="gold.html">Entwurf öffnen</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="preview-blocks.jpg" width="1082" height="1838" alt="Vorschau des Entwurfs Blocks auf einem Telefon">
+      <div class="text">
+        <h2>Blocks</h2>
+        <p>Farbige Bänder gliedern die Seite. Jeder Abschnitt bekommt einen eigenen
+        Ton, die Fotos liegen darin eingefasst.</p>
+        <a class="open" href="blocks.html">Entwurf öffnen</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="preview-sole.jpg" width="1082" height="1838" alt="Vorschau des Entwurfs Sole auf einem Telefon">
+      <div class="text">
+        <h2>Sole</h2>
+        <p>Redaktionell und ruhig. Bilder randlos über die volle Breite, die
+        Überschrift steht unter ihrem Bild, ein kühler Ton als Gegengewicht.</p>
+        <a class="open" href="sole.html">Entwurf öffnen</a>
+      </div>
+    </article>
+
+  </div>
+
+  <footer>
+    <p><strong>Prototyp, keine produktive Website.</strong> Schaltflächen, Bestellung
+    und Formulare sind bewusst wirkungslos.</p>
+    <p>Preise und Öffnungszeiten sind noch nicht bestätigt und dürfen so nicht
+    veröffentlicht werden.</p>
+  </footer>
+</div>
+
+</body>
+</html>
