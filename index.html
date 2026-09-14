@@ -1,108 +1,104 @@
 <!doctype html>
-<html lang="de-CH">
+<html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Gelato Italiano — drei Entwürfe</title>
+<meta name="color-scheme" content="light">
+<title>One gelateria, three designs</title>
 <style>
-  :root{
-    color-scheme: light;
-    --ink:#1b1b1f; --muted:#55555e; --bg:#fbfbfa; --card:#ffffff;
-    --line:#e2e2e6; --accent:#1f4f8f;
-  }
-  *,*::before,*::after{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%}
-  body{
-    margin:0; background:var(--bg); color:var(--ink);
-    font:1rem/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-    hyphens:auto;
-  }
-  img{max-width:100%; height:auto; display:block}
-  a{color:var(--accent)}
-  :focus-visible{outline:3px solid var(--accent); outline-offset:3px}
+:root{
+  color-scheme: light;
+  --bg:#FBF7F1; --card:#FFFFFF; --rule:#E4DACB;
+  --ink:#22201E; --muted:#6B6259; --link:#14506B;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{width:min(100% - 2.4rem, 58rem);margin-inline:auto;
+  padding-block:clamp(2.8rem,9vw,4.6rem) 4.5rem}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--link);outline-offset:3px;border-radius:3px}
 
-  .wrap{max-width:60rem; margin:0 auto; padding:0 1.25rem}
-  header{padding:3rem 0 1.5rem}
-  h1{font-size:clamp(1.75rem,6vw,2.5rem); line-height:1.15; margin:0 0 .5rem}
-  .lede{color:var(--muted); font-size:1.125rem; margin:0; max-width:42rem}
+h1{font-size:clamp(2.2rem,9vw,3.4rem);font-weight:800;letter-spacing:-.035em;
+  line-height:1.04;margin:0 0 1.1rem;text-wrap:balance}
+.lede{color:var(--muted);max-width:54ch;margin:0 0 1rem;font-size:1.08rem}
+.note{border-top:1px solid var(--rule);margin-top:2.8rem;padding-top:1.2rem;
+  color:var(--muted);font-size:.96rem;max-width:56ch}
 
-  .grid{display:grid; gap:1.5rem; padding-bottom:3rem}
-  @media (min-width:52rem){ .grid{grid-template-columns:repeat(3,1fr)} }
+.grid{display:grid;gap:1.6rem;margin-top:2.8rem;grid-template-columns:1fr}
+@media (min-width:760px){ .grid{grid-template-columns:repeat(3,1fr)} }
 
-  .card{
-    background:var(--card); border:1px solid var(--line); border-radius:.9rem;
-    overflow:hidden; display:flex; flex-direction:column;
-  }
-  .card img{border-bottom:1px solid var(--line); width:100%}
-  .card .text{padding:1.25rem; display:flex; flex-direction:column; gap:.5rem; flex:1}
-  .card h2{font-size:1.25rem; margin:0}
-  .card p{margin:0; color:var(--muted)}
-  .open{
-    margin-top:auto; align-self:flex-start;
-    display:inline-flex; align-items:center; min-height:48px; padding:0 1.5rem;
-    border-radius:.5rem; background:var(--accent); color:#fff;
-    font-weight:600; text-decoration:none;
-  }
+.card{display:flex;flex-direction:column;background:var(--card);
+  border:1px solid var(--rule);overflow:hidden;text-decoration:none;
+  transition:border-color .2s ease}
+@media (hover:hover){ .card:hover{border-color:var(--link)} }
+.card .shot{margin:0;background:var(--bg);aspect-ratio:360/420;overflow:hidden}
+.card img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center}
+.card .body{padding:1.2rem 1.3rem 1.4rem}
+.card h2{font-size:1.28rem;font-weight:800;letter-spacing:-.02em;margin:0 0 .45rem}
+.card p{margin:0;color:var(--muted);font-size:.98rem}
+.card .go{margin-top:1rem;font-weight:700;color:var(--link);display:inline-block}
 
-  footer{border-top:1px solid var(--line); padding:2rem 0 3rem; color:var(--muted)}
-  footer p{margin:0 0 .5rem; max-width:42rem}
-
-  @media (prefers-reduced-motion: reduce){
-    *,*::before,*::after{animation-duration:.001ms !important; transition-duration:.001ms !important}
-  }
+footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1.3rem;
+  font-size:.94rem;line-height:1.85;color:var(--muted)}
 </style>
 </head>
 <body>
-
 <div class="wrap">
-  <header>
-    <h1>Gelato Italiano — drei Entwürfe</h1>
-    <p class="lede">Gleiche Inhalte, gleiche Fotos, gleicher Aufbau. Nur die Gestaltung
-    unterscheidet sich, damit sich die Entwürfe an dem vergleichen lassen, was
-    tatsächlich variiert. Am besten auf dem Telefon ansehen.</p>
-  </header>
+
+  <h1>One gelateria,<br>three designs</h1>
+  <p class="lede">The same page three times over, with identical words and identical
+  photographs. Only the design changes, so the three can be compared on the one
+  thing that actually differs between them.</p>
+  <p class="lede">Made to be opened on a phone. Each is a single file that works
+  with the network switched off.</p>
 
   <div class="grid">
 
-    <article class="card">
-      <img src="preview-gold.jpg" width="1082" height="1838" alt="Vorschau des Entwurfs Gold auf einem Telefon">
-      <div class="text">
-        <h2>Gold</h2>
-        <p>Warm und hell. Ein Akzent trägt die ganze Seite, Karten und viel Weissraum
-        halten die Fotos zusammen.</p>
-        <a class="open" href="gold.html">Entwurf öffnen</a>
+    <a class="card" href="gold.html">
+      <figure class="shot"><img src="preview-gold.jpg" width="360" height="632"
+        alt="Phone screenshot of a white page with gold buttons and photographs set in cards" loading="lazy"></figure>
+      <div class="body">
+        <h2>The shop's own gold</h2>
+        <p>A bright page that holds the photographs. One warm colour, cards, room to breathe.</p>
+        <span class="go">Have a look</span>
       </div>
-    </article>
+    </a>
 
-    <article class="card">
-      <img src="preview-blocks.jpg" width="1082" height="1838" alt="Vorschau des Entwurfs Blocks auf einem Telefon">
-      <div class="text">
-        <h2>Blocks</h2>
-        <p>Farbige Bänder gliedern die Seite. Jeder Abschnitt bekommt einen eigenen
-        Ton, die Fotos liegen darin eingefasst.</p>
-        <a class="open" href="blocks.html">Entwurf öffnen</a>
+    <a class="card" href="blocks.html">
+      <figure class="shot"><img src="preview-blocks.jpg" width="360" height="632"
+        alt="Phone screenshot of full-width flat pastel colour bands, one behind each section" loading="lazy"></figure>
+      <div class="body">
+        <h2>Eight colours, one per section</h2>
+        <p>Colour becomes the page itself. Every section sits on its own band, every button borrows a different one.</p>
+        <span class="go">Have a look</span>
       </div>
-    </article>
+    </a>
 
-    <article class="card">
-      <img src="preview-sole.jpg" width="1082" height="1838" alt="Vorschau des Entwurfs Sole auf einem Telefon">
-      <div class="text">
-        <h2>Sole</h2>
-        <p>Redaktionell und ruhig. Bilder randlos über die volle Breite, die
-        Überschrift steht unter ihrem Bild, ein kühler Ton als Gegengewicht.</p>
-        <a class="open" href="sole.html">Entwurf öffnen</a>
+    <a class="card" href="sole.html">
+      <figure class="shot"><img src="preview-sole.jpg" width="360" height="632"
+        alt="Phone screenshot of a warm off-white page, a full-width photograph with the headline beneath it" loading="lazy"></figure>
+      <div class="body">
+        <h2>Photographs first</h2>
+        <p>Pictures run right to the edges and the headline sits underneath, the way a magazine opens a story.</p>
+        <span class="go">Have a look</span>
       </div>
-    </article>
+    </a>
 
   </div>
 
-  <footer>
-    <p><strong>Prototyp, keine produktive Website.</strong> Schaltflächen, Bestellung
-    und Formulare sind bewusst wirkungslos.</p>
-    <p>Preise und Öffnungszeiten sind noch nicht bestätigt und dürfen so nicht
-    veröffentlicht werden.</p>
-  </footer>
-</div>
+  <p class="note">These are designs, not a working shop. The basket, the checkout
+  and the account buttons do nothing on purpose, and the prices are there to show
+  how they look.</p>
 
+  <footer>
+    Three single files, built without a framework and without a build step.<br>
+    The typeface and every photograph are inside each file, so nothing is loaded
+    from anywhere else.
+  </footer>
+
+</div>
 </body>
 </html>
