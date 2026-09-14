@@ -144,4 +144,58 @@ review
 ↓
 merge
 
-Avoid direct modifications
+Avoid direct modifications on main whenever possible.
+
+Create clear and descriptive commits.
+
+Example:
+
+feat: add responsive hero section
+
+fix: improve mobile navigation
+
+style: update typography system
+
+---
+
+# Quality Checklist
+
+Before completing any task verify:
+
+- Mobile layout works
+- Tablet layout works
+- Desktop layout works
+- Navigation functions correctly
+- No broken links
+- No missing images
+- No console errors
+- Accessibility considerations reviewed
+- Responsive behavior tested
+
+---
+
+# Deployment Rules
+
+Deployment target:
+
+GitHub Pages
+
+Before deployment:
+
+- Remove unused files
+- Verify assets load correctly
+- Verify all links work
+- Verify branding is consistent
+- Verify customer approval received
+
+---
+
+# Required Final Output
+
+At the end of every task provide:
+
+1. Summary of changes
+2. Files modified
+3. Validation checks performed
+4. Open issues or missing customer inputs
+5. Recommended next step
